@@ -119,7 +119,7 @@ public class TopicActivity extends FragmentActivity {
 			finish();
 		}
 	}
-
+//前一题
 	public void toPreTopic(View view) {
 		int page = topic_pager.getCurrentItem();
 		if (page == 0) {
@@ -128,7 +128,7 @@ public class TopicActivity extends FragmentActivity {
 			topic_pager.setCurrentItem(page - 1);
 		}
 	}
-
+//下一题
 	public void toNextTopic(View view) {
 		int page = topic_pager.getCurrentItem();
 		if (page == tc.getTopicList().size() - 1) {
@@ -137,7 +137,7 @@ public class TopicActivity extends FragmentActivity {
 			topic_pager.setCurrentItem(page + 1);
 		}
 	}
-
+//任意跳转
 	public void toChangeLabel(View view) {
 
 		int daoId = tc.getDaoId(topic_pager.getCurrentItem() + 1);
@@ -161,7 +161,7 @@ public class TopicActivity extends FragmentActivity {
 			}
 		}
 	}
-
+//显示答案
 	public void toSwitchAnswerShow(View view) {
 		if (mode == TopicController.MODE_PRACTICE_TEST) {
 			Log.e("Topic", "Please check layout");

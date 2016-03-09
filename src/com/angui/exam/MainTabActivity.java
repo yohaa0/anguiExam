@@ -294,6 +294,7 @@ public class MainTabActivity extends FragmentActivity implements
 		  } 
 		  return true; 
 		} 
+	//退出确认取消对话框
 	protected void exitdialog(){
   	AlertDialog.Builder builder = new Builder(this);
   	builder.setMessage("确认退出吗？");

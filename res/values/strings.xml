@@ -21,7 +21,7 @@
     <string name="send_weibo_fail">发送成功</string>
     <string name="send_weibo_success">发送成功</string>
     <!-- Classisc question -->
-    <string name="classics_title">经典例题</string>
+    <string name="classics_title">填空问答案例</string>
     <string name="classics_show_answer">显示答案</string>
     <string name="classics_not_show_answer">隐藏答案</string>
     <!-- Record -->
@@ -58,7 +58,7 @@
     <!-- MainTab -->
     <string-array name="main_title">
         <item name="exam">练习与考试</item>
-        <item name="classics">经典例题</item>
+        <item name="classics">填空问答案例</item>
         <item name="more">更多</item>
     </string-array>
     <!-- 统计 -->

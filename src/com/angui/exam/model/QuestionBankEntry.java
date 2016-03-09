@@ -23,7 +23,7 @@ public class QuestionBankEntry implements Serializable
 	private String opt3 = "";
 	private String opt4 = "";
 	private String opt5 = "";
-	private String opt6 = "";
+	
 	private String answer = "";
 	private String explain = "";
 	private int answeredTime;
@@ -85,11 +85,6 @@ public class QuestionBankEntry implements Serializable
 	public String getOpt5()
 	{
 		return opt5;
-	}
-
-	public String getOpt6()
-	{
-		return opt6;
 	}
 
 	public String getAnswer()
@@ -177,11 +172,6 @@ public class QuestionBankEntry implements Serializable
 		this.opt5 = opt5;
 	}
 
-	public void setOpt6(String opt6)
-	{
-		this.opt6 = opt6;
-	}
-
 	public void setAnswer(String answer)
 	{
 		this.answer = answer;
@@ -224,7 +214,7 @@ public class QuestionBankEntry implements Serializable
 
 	public QuestionBankEntry(int type, int classId, int subClassId,
 			int difficult, String question, String opt1, String opt2,
-			String opt3, String opt4, String opt5, String opt6,String answer, String explain,
+			String opt3, String opt4, String opt5, String answer, String explain,
 			int answeredTime, int rightTime, int wrongTime, int collectedFlag,
 			int inWrongFlag)
 	{
@@ -238,8 +228,7 @@ public class QuestionBankEntry implements Serializable
 		this.opt2 = opt2;
 		this.opt3 = opt3;
 		this.opt4 = opt4;
-		this.opt5 = opt5;
-		this.opt6 = opt6;
+		this.opt5 = opt5;		
 		this.answer = answer;
 		this.explain = explain;
 		this.answeredTime = answeredTime;
@@ -268,7 +257,6 @@ public class QuestionBankEntry implements Serializable
 		values.put("opt3", opt3);
 		values.put("opt4", opt4);
 		values.put("opt5", opt5);
-		values.put("opt6", opt6);
 		values.put("answer", answer);
 		values.put("explain", explain);
 		values.put("answeredTime", answeredTime);

@@ -38,7 +38,6 @@
                 android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
-
     <Button
         android:id="@+id/btn_classics_show_answer"
         android:layout_width="match_parent"
@@ -46,7 +45,6 @@
         android:layout_weight="1"
         android:background="@drawable/bg_tab"
         android:onClick="showAnswer"
-        android:text="@string/classics_show_answer" 
-        android:textColor="#ffffff"/>
-
+        android:text="@string/classics_show_answer"
+        android:textColor="#ffffff"  />
 </LinearLayout>
