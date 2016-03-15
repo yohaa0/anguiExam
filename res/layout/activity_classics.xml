@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eaeaea"
     android:orientation="vertical" >
 
     <include
@@ -14,7 +15,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9" >
+        android:layout_margin="8dip"
+        android:layout_weight="9"
+        android:background="@color/white" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +33,7 @@
 		        android:id="@+id/tv_classics_useranswer" 
 		        android:layout_width="match_parent" 
 		        android:layout_height="wrap_content" 
-		         android:hint="请输入你的答案" /> 
+		        android:hint="请输入你的答案" /> 
             <TextView
                 android:id="@+id/tv_classics_answer"
                 android:layout_width="wrap_content"
@@ -43,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/bg_tab"
+        android:background="@color/main_bg"
         android:onClick="showAnswer"
         android:text="@string/classics_show_answer"
         android:textColor="#ffffff"  />

@@ -34,7 +34,7 @@ public class TopicFragment extends Fragment {
 	private static int topicMode;
 	private static Activity activity;
 	private static TopicFragmentCallBacks topicFragmentCallBacks;
-	private static final String[] PRESUFFIX = new String[] { "A", "B", "C", "D" };
+	private static final String[] PRESUFFIX = new String[] { "A", "B", "C", "D","E" };
 	private RadioGroup rg_topic;
 
 	public static void setController(TopicController topicController) {
@@ -134,13 +134,14 @@ public class TopicFragment extends Fragment {
 		} else {
 			orderMap = savedOrderMap;
 		}
+		
 		rg_topic = new RadioGroup(context);
 		switch (type) {
 		// 选择题
 		case TopicController.TYPE_CHOICE: {
 			RadioButton[] rbs = new RadioButton[4];
 			for (int i = 0; i < 4; i++) {
-				rbs[i] = new RadioButton(context);
+				rbs[i] = new RadioButton(context);//题目
 				rbs[i].setText(PRESUFFIX[i]
 						+ "."
 						+ String.valueOf(dataMap.get(topicController
@@ -153,7 +154,7 @@ public class TopicFragment extends Fragment {
 		case TopicController.TYPE_RW: {
 			RadioButton[] rbs = new RadioButton[2];
 			for (int i = 0; i < 2; i++) {
-				rbs[i] = new RadioButton(context);
+				rbs[i] = new RadioButton(context);//题目
 				rbs[i].setText(PRESUFFIX[i]
 						+ "."
 						+ String.valueOf(dataMap.get(topicController
@@ -165,7 +166,7 @@ public class TopicFragment extends Fragment {
 		default:
 			break;
 		}
-
+//设置选项不能改变
 		if(topicController.isAnswerShow()){		
 			if(topicController.getSelectedFlag(mPosition)){
 				SetSelectedRadioButton(rg_topic,

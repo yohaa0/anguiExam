@@ -17,14 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10" />
-
+	
     <com.angui.exam.widget.IconPageIndicator
         android:id="@+id/main_tab_icon_indicator"
         android:layout_width="match_parent"
         android:layout_height="0dp" 
         android:layout_weight="1"
         android:background="@drawable/bg_tab"/>
-
-    
+       
 
 </LinearLayout>

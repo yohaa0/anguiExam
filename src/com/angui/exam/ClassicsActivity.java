@@ -5,7 +5,6 @@ import com.angui.exam.model.QuestionBankService;
 import com.angui.exam.R;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,8 +53,8 @@ public class ClassicsActivity extends BaseActivity {
 			//Toast用户输入,字符比较出错，待查
 			String S_answer=(tv_classics_answer.getText().toString()).trim();
 			String S_useranswer=(editText.getText().toString()).trim();
-			String inputText = "你的答案："+S_useranswer+" 正确";
-			String inputText2="你的答案："+S_useranswer+"\n正确答案："+S_answer;
+			String inputText = "你的答案:"+S_useranswer+" 正确";
+			String inputText2="你的答案:"+S_useranswer+"\n正确答案:"+S_answer;
 			if(S_useranswer.equals(S_answer))
 			  Toast.makeText(ClassicsActivity.this, inputText, 
 					Toast.LENGTH_SHORT).show(); 

@@ -67,7 +67,7 @@ public class TopicController {
 		itemMap.put(2, "opt2");
 		itemMap.put(3, "opt3");
 		itemMap.put(4, "opt4");
-		
+		itemMap.put(5, "opt5");
 
 		totalTopicItemsMap = new HashMap<Integer, HashMap<String, Integer>>();
 		selecetedChoice = new HashMap<Integer, String>();
@@ -243,12 +243,12 @@ public class TopicController {
 	public String getAnswer(int id) {
 		return questionBankService.getAnswer(context, id);
 	}
-
+//返回正确选项
 	public RadioButton getCorrectRadioButton(RadioGroup rg,
 			HashMap<String, Integer> orderMap, String answer) {
 		RadioButton returnRb = new RadioButton(context);
 		switch (rg.getChildCount()) {
-		case 2: {
+		case 2: {//判断题
 			RadioButton rb_item1 = (RadioButton) rg.getChildAt(0);
 			RadioButton rb_item2 = (RadioButton) rg.getChildAt(1);
 			if (String
@@ -267,7 +267,7 @@ public class TopicController {
 			}
 			break;
 		}
-		case 4: {
+		case 4: {//单选题
 			RadioButton rb_item1 = (RadioButton) rg.getChildAt(0);
 			RadioButton rb_item2 = (RadioButton) rg.getChildAt(1);
 			RadioButton rb_item3 = (RadioButton) rg.getChildAt(2);
@@ -291,7 +291,7 @@ public class TopicController {
 		}
 		return returnRb;
 	}
-
+//设置选项状态
 	public void setRadioButtonState(RadioGroup rg, boolean bl) {
 		switch (rg.getChildCount()) {
 		case 2: {
@@ -326,7 +326,7 @@ public class TopicController {
 //	public ExamResultEntry getThisTestScore() {
 //		return examResultService.getThisTestScore();
 //	}
-
+//随机选项啊
 	public HashMap<String, Integer> getOrderMap(int topicType) {
 		HashMap<String, Integer> orderMap = new HashMap<String, Integer>();
 		ArrayList<Integer> tempList = new ArrayList<Integer>();

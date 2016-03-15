@@ -20,6 +20,6 @@ public class MoreDetailsActivity extends BaseActivity {
 		tv_title.setText(getResources().getStringArray(R.array.more_items)[position]);
 		tv_more_details.setText(getResources().getStringArray(R.array.more_details)[position]);
 	}
-
+		
 }
 

@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rl_title"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_title"
-     >
-
+    android:background="#288df5"
+    android:orientation="horizontal" >
+<!-- 文字放不下时跑马灯效果显示 -->
         <TextView
             android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
+            android:layout_width="150dip"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
             android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+        	android:gravity="center"
             android:textColor="#ffffff"
             android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:textSize="18.0sp" />
 
+		
         <Chronometer
             android:id="@+id/ch_topic_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="24dp"
-            android:text="@string/text_blank" />
-
+            android:layout_marginLeft="8dp"
+            android:text="@string/text_blank"
+            android:drawableLeft="@drawable/ic_practice_time"
+            android:textColor="#ffffff" />
+       
     </RelativeLayout>

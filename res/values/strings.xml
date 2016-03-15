@@ -5,7 +5,7 @@
     <string name="app_name">安规练习系统</string>
     <string name="action_settings">Settings</string>
     <string name="title_image_description"></string>
-    <string name="tab_image_description"></string>
+    <string name="tab_image_description">跳转</string>
     <string name="text_blank"></string>
     <string name="data_not_exist">亲，还没有相关数据呢~</string>
     <string name="please_wait">很抱歉亲，功能还在开发中，敬请期待哦</string>

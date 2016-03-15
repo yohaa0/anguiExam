@@ -9,8 +9,8 @@ import com.angui.exam.util.UiUtil;
 import com.angui.exam.util.WindowUtil;
 import com.angui.exam.R;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -22,8 +22,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
@@ -33,11 +31,10 @@ import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
-public class TopicActivity extends FragmentActivity {
+@SuppressLint("InflateParams") public class TopicActivity extends FragmentActivity {
 	private ViewPager topic_pager;
 	private int mode;
 	private int subClass; // 章节练习中的章节，强化练习中的类型
@@ -180,7 +177,7 @@ public class TopicActivity extends FragmentActivity {
 
 		topic_pager.setCurrentItem(currentItem);
 	}
-
+//收藏？
 	public void toSeek(View v) {
 		if (seekPopupWindow.isShowing()) {
 			return;
@@ -348,6 +345,7 @@ public class TopicActivity extends FragmentActivity {
 	public void toSubmit(View v){
 		submitTest();
 	}
+	//交卷
 	private void submitTest() {
 		new AlertDialog.Builder(TopicActivity.this)
 				.setTitle(getResources().getString(R.string.topic_exit_exam))
@@ -361,7 +359,7 @@ public class TopicActivity extends FragmentActivity {
 										.toString();
 								int totalCount = tc.getRightCount()
 										+ tc.getWrongCount();
-								int totalScore = tc.getRightCount() * 2;
+								int totalScore = tc.getRightCount() * 1;//每一题多少分
 								Calendar c = Calendar.getInstance();
 								String dateTime = c.get(Calendar.YEAR) + "-"
 										+ ((Integer)c.get(Calendar.MONTH)+1) + "-"

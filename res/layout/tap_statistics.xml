@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.angui.exam.widget.PieChartView
+       <com.angui.exam.widget.PieChartView
         android:id="@+id/pcv_statistics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-    </com.angui.exam.widget.PieChartView>
+        </com.angui.exam.widget.PieChartView>
 
 </LinearLayout>

@@ -5,13 +5,16 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"
-    android:background="@drawable/bg_tab" >
+    android:background="@color/main_bg" >
 
     <Button
-        android:layout_width="0dp"
+    	android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/ic_practice_up_subject"
         android:onClick="toPreTopic"
         android:text="@string/topic_preTopic"
         android:textSize="12sp" />
@@ -21,7 +24,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/ic_answer"
         android:onClick="toSwitchAnswerShow"
         android:text="@string/topic_answer_show"
         android:textSize="12sp" />
@@ -31,10 +37,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        android:background="@color/main_bg"
+        android:src="@drawable/ic_practice_tatal_index"
         android:contentDescription="@string/tab_image_description"
         android:onClick="toSeek"
-        android:src="@drawable/tab_topic_seek"
         android:layout_gravity="center"
         android:textColor="#fff" />
 
@@ -43,7 +49,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-       	android:background="@drawable/bg_btn_topic_tab"
+       	style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/ic_practice_test_error"
         android:onClick="toChangeLabel"
         android:text="@string/topic_set_collect"
         android:textSize="12sp" />
@@ -52,7 +61,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/ic_practice_next_subject"
         android:onClick="toNextTopic"
         android:text="@string/topic_nextTopic"
         android:textSize="12sp" />

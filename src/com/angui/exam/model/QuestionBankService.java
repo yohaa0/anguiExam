@@ -66,7 +66,7 @@ public class QuestionBankService extends CommonEntryDao {
 		}
 		return backList;
 	}
-
+//随机取题
 	public ArrayList<Map<String, Object>> testSearch(Context context) {
 		String whereClause = "type<=2";
 		examMap = new HashMap<Integer, Integer>();
@@ -86,7 +86,7 @@ public class QuestionBankService extends CommonEntryDao {
 			backList.add(tempList.get(sizeNumber));
 			tempList.remove(sizeNumber);
 			size = tempList.size();
-			if (count == 50) {
+			if (count == 100) {//设置考试题目数量
 				break;
 			}
 			count++;

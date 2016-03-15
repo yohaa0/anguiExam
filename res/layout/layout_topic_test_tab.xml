@@ -1,60 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout_topic"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentLeft="true"
-    android:background="@drawable/bg_tab" >
+  	 android:id="@+id/layout_topic"
+	 android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:layout_alignParentBottom="true"
+	 android:background="@color/main_bg" >
 
-    <Button
+    <!--	<LinearLayout
+            android:id="@+id/activity_prepare_test_upLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:src="@drawable/ic_practice_up_subject" 
+                android:onClick="toPreTopic"/>
+
+            <TextView
+                style="@style/menu_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_menu_margin_8"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:onClick="toPreTopic"
+                android:text="上一题" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_errorLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/menu_bottom_errorIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toChangeLabel"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:src="@drawable/ic_practice_test_error" />
+
+            <TextView
+                android:id="@+id/menu_bottom_errorTV"
+                style="@style/menu_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toChangeLabel"
+                android:layout_marginBottom="@dimen/home_menu_margin_8"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:text="收藏" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_totalLayout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toSeek"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:src="@drawable/ic_practice_tatal_index" /> 
+
+                <TextView
+                android:id="@+id/activity_prepare_test_totalTv"
+                style="@style/menu_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toSeek"
+                android:layout_marginBottom="@dimen/home_menu_margin_8"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:text="1/100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_finish"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/menu_bottom_finishIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toSubmit"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:src="@drawable/vote_submit_finish" />
+
+            <TextView
+                android:id="@+id/menu_bottom_finishTV"
+                style="@style/menu_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toSubmit"
+                android:layout_marginBottom="@dimen/home_menu_margin_8"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:text="交卷" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_nextLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/menu_bottom_nextIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toNextTopic"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:src="@drawable/ic_practice_next_subject" />
+
+            <TextView
+                android:id="@+id/menu_bottom_nextTV"
+                style="@style/menu_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toNextTopic"
+                android:layout_marginBottom="@dimen/home_menu_margin_8"
+                android:layout_marginTop="@dimen/home_menu_margin_5"
+                android:text="下一题" />
+        </LinearLayout>
+        -->
+        <Button
+        style="@style/menu_bottom_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/menu_bottom_bg"
         android:onClick="toPreTopic"
+        android:drawableTop="@drawable/ic_practice_up_subject"
         android:text="@string/topic_preTopic"
-        android:textSize="12sp" />
+         />
 
     <Button
         android:id="@+id/btn_topic_changeLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/ic_practice_test_error"
         android:onClick="toChangeLabel"
         android:text="@string/topic_set_collect"
-        android:textSize="12sp" />
+        />
 
     <ImageButton
         android:id="@+id/btn_seek"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        android:background="@color/main_bg"
+        android:src="@drawable/ic_practice_tatal_index"
         android:contentDescription="@string/tab_image_description"
         android:onClick="toSeek"
-        android:src="@drawable/tab_topic_seek"
         android:layout_gravity="center"
-        android:textColor="#ffffff" />
+        android:textColor="#fff"/>
 
     <Button
         android:id="@+id/btn_topic_test_submit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-       	android:background="@drawable/bg_btn_topic_tab"
+       	style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/vote_submit_finish"
         android:onClick="toSubmit"
         android:text="@string/topic_test_submit"
-        android:textSize="12sp" />
+         />
 
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/bg_btn_topic_tab"
+        style="@style/menu_bottom_text"
+        android:layout_marginTop="@dimen/home_menu_margin_5"
+        android:background="@color/main_bg"
+        android:drawableTop="@drawable/ic_practice_next_subject"
         android:onClick="toNextTopic"
         android:text="@string/topic_nextTopic"
-        android:textSize="12sp" />
-
+         />
+		
 </LinearLayout>

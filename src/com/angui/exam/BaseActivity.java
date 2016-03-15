@@ -1,20 +1,13 @@
 package com.angui.exam;
 
-import com.angui.exam.util.FileUtil;
-import com.angui.exam.R;
-
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.widget.Toast;
+
+import com.angui.exam.util.FileUtil;
 
 /**
  * @author sxenon 所有Activity的共同特征，比方说没有状态栏 不能直接使用！！！

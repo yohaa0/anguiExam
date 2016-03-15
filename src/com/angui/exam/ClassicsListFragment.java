@@ -86,7 +86,7 @@ public class ClassicsListFragment extends ListFragment {
 				android.R.layout.simple_list_item_activated_1,
 				android.R.id.text1, contents));
 	}
-
+	
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
@@ -97,7 +97,7 @@ public class ClassicsListFragment extends ListFragment {
 			setActivatedPosition(savedInstanceState
 					.getInt(STATE_ACTIVATED_POSITION));
 		}
-		view.setBackgroundResource(R.drawable.bg_main_classics);
+		view.setBackgroundResource(R.drawable.bg_main_more);
 	}
 
 	@Override
